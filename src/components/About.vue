@@ -5,7 +5,8 @@
     </div>
     <div class="w-2/3">
       <p>
-        Hi there, my name is Juan and I'm a Front-End Developer and learning enthusiast. 
+        Hi there, my name is Juan and I'm a Front-End Developer and learning
+        enthusiast.
       </p>
     </div>
   </div>

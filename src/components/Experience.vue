@@ -1,0 +1,79 @@
+<template>
+  <div class="bg-gray-200 p-16">
+    <div v-for="event in timelineItems" :key="event.title">
+      <p class="font-bold">{{ event.dateRange.from.month }} - {{ event.dateRange.from.year }}</p>
+      <p>{{ event.location }}</p>
+      <p>{{ event.company }} * {{ event.title }}</p>
+      <p>{{ event.description }}</p>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Experience",
+  data: function() {
+    return {
+      timelineItems: [
+        {
+          dateRange: {
+            from: {
+              month: "January",
+              year: "2017",
+            },
+            to: {
+              month: "July",
+              year: "2017",
+              current: false,
+            },
+          },
+          title: "Web Dev. Intern",
+          company: "Base22",
+          location: "Monterrey, MX",
+          description:
+            "During my time as an intern, I was tasked with translating company's JS components to Vue.JS.",
+        },
+        {
+          dateRange: {
+            from: {
+              month: "July",
+              year: "2017",
+            },
+            to: {
+              month: "August",
+              year: "2019",
+              current: false,
+            },
+          },
+          title: "Enterprise Web Developer",
+          company: "Base22",
+          location: "Monterrey, MX",
+          description:
+            "As a Front End Developer, I was tasked with developing and maintaing intranets for different clients like CEMEX, UPS and the State of Ohio. I also gained experience as instructor by facilitating and providing a curse on Web Components with Stencil.",
+        },
+        {
+          dateRange: {
+            from: {
+              month: "September",
+              year: "2019",
+            },
+            to: {
+              month: "",
+              year: "",
+              current: true,
+            },
+          },
+          title: "Enterprise Web Developer",
+          company: "Base22",
+          location: "Columbus, OH",
+          description:
+            "My main focus is to develop and maintain intranets for the State of Ohio and its diverse agencies. I mostly work with Vue.JS and Tailwind CSS. Amongst the sites I've built, I developed tha main site that the State of Ohio is using as central information hub during the coronavirus pandemic",
+          showcase: "https://coronavirus.ohio.gov",
+        },
+      ],
+    };
+  },
+};
+</script>
+
+<style></style>

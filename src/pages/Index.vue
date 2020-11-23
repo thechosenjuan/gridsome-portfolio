@@ -1,18 +1,21 @@
 <template>
   <Layout>
     <About />
+    <Experience />
   </Layout>
 </template>
 
 <script>
 import About from "../components/About";
+import Experience from "../components/Experience";
 export default {
   metaInfo: {
-    title: "Hello, world!"
+    title: "Hello, world!",
   },
   components: {
-    About
-  }
+    About,
+    Experience,
+  },
 };
 </script>
 
