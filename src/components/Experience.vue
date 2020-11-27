@@ -1,9 +1,15 @@
 <template>
-  <div class="bg-gray-200 p-16">
-    <div v-for="event in timelineItems" :key="event.title">
-      <p class="font-bold">{{ event.dateRange.from.month }} - {{ event.dateRange.from.year }}</p>
+  <div class="bg-gray-200 px-96 py-16">
+    <div v-for="event in timelineItems" :key="event.title" class="relative">
+      <p class="font-bold absolute -left-36">
+        {{ event.dateRange.from.month }} - {{ event.dateRange.from.year }}
+      </p>
       <p>{{ event.location }}</p>
-      <p>{{ event.company }} * {{ event.title }}</p>
+
+      <p class="inline-block italic">{{ event.company }}</p>
+      -
+      <p class="inline-block font-bold">{{ event.title }}</p>
+
       <p>{{ event.description }}</p>
     </div>
   </div>
@@ -18,11 +24,11 @@ export default {
         {
           dateRange: {
             from: {
-              month: "January",
+              month: "Jan.",
               year: "2017",
             },
             to: {
-              month: "July",
+              month: "Jul.",
               year: "2017",
               current: false,
             },
@@ -31,16 +37,16 @@ export default {
           company: "Base22",
           location: "Monterrey, MX",
           description:
-            "During my time as an intern, I was tasked with translating company's JS components to Vue.JS.",
+            "During my time as an intern, I was tasked with translating company proprietary JS components to Vue.JS.",
         },
         {
           dateRange: {
             from: {
-              month: "July",
+              month: "Jul.",
               year: "2017",
             },
             to: {
-              month: "August",
+              month: "Aug.",
               year: "2019",
               current: false,
             },
@@ -54,7 +60,7 @@ export default {
         {
           dateRange: {
             from: {
-              month: "September",
+              month: "Sep.",
               year: "2019",
             },
             to: {
