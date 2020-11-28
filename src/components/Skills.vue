@@ -32,6 +32,9 @@ export default {
         "Firebase",
         "PostgreSQL",
         "Flask",
+        "Web Components",
+        "StencilJS",
+        "Netlify",
       ],
     };
   },

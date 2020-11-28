@@ -1,18 +1,13 @@
 <template>
   <div class="p-4 md:w-1/3">
     <div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
-      <img
-        class="lg:h-48 md:h-36 w-full object-cover object-center"
-        src="https://dummyimage.com/720x400"
-        alt="blog"
-      />
+      <img :src="thumbnail" />
       <div class="p-6">
         <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-          The Catalyzer
+          {{ title }}
         </h1>
         <p class="leading-relaxed mb-3">
-          Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
-          microdosing tousled waistcoat.
+          {{ description }}
         </p>
       </div>
     </div>
@@ -22,6 +17,7 @@
 <script>
 export default {
   name: "Card",
+  props: ["thumbnail", "title", "description"],
 };
 </script>
 

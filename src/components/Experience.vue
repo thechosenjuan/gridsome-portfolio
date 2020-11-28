@@ -10,7 +10,7 @@
       -
       <p class="inline-block font-bold">{{ event.title }}</p>
 
-      <p>{{ event.description }}</p>
+      <p class="text-justify">{{ event.description }}</p>
     </div>
   </div>
 </template>
