@@ -9,6 +9,21 @@
       </nav>
     </header>
     <slot />
+    <footer class="px-12 py-12 bg-gray-300">
+      <p class="inline-block">2020 ©</p>
+      <div class="float-right -m-2">
+        <g-image
+          src="~/assets/images/github-logo.png"
+          class="logo--github inline-block cursor-pointer"
+          @click="handleGithubClick"
+        />
+        <g-image
+          src="~/assets/images/linkedin-logo.png"
+          class="logo--linkedin inline-block cursor-pointer"
+          @click="handleLinkedInClick"
+        />
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -20,6 +35,18 @@ query {
 }
 </static-query>
 
+<script>
+export default {
+  methods: {
+    handleGithubClick: function() {
+      window.open("https://github.com/thechosenjuan", "_blank");
+    },
+    handleLinkedInClick: function() {
+      window.open("https://www.linkedin.com/in/juanfloresbarr/", "_blank");
+    },
+  },
+};
+</script>
 <style>
 body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -34,6 +61,13 @@ body {
   margin: 0 auto; */
   /* padding-left: 20px;
   padding-right: 20px; */
+}
+.logo--github {
+  width: 30px;
+}
+
+.logo--linkedin {
+  width: 38px;
 }
 
 .header {

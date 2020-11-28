@@ -8,11 +8,17 @@
   },
   "dependencies": {
     "autoprefixer": "^9.8.6",
-    "gridsome": "^0.7.0",
-    "postcss": "^7.0.35",
+    "gridsome": "^0.7.23",
+    "postcss": "^8.1",
+    "postcss-import": "^13.0.0",
+    "postcss-loader": "^4.1.0",
+    "postcss-nested": "^5.0.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/vue-fontawesome": "^2.0.0",
     "@fullhuman/postcss-purgecss": "^3.0.0"
   }
 }
