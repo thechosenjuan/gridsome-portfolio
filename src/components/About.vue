@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-between">
-    <div class="w-1/4 rounded-full ring-4 ring-purple-500">
+    <div class="w-40 rounded-full ring-4 ring-purple-500">
       <g-image src="~/assets/images/profile_pic.jpg" class="rounded-full" />
     </div>
     <div class="w-2/3">
