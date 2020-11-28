@@ -1,7 +1,7 @@
 <template>
   <section class="text-gray-700">
     <h2 class="text-center text-5xl font-bold">Key Skills</h2>
-    <div class="container px-5 py-12 mx-auto flex flex-wrap">
+    <div class="flex flex-wrap">
       <div
         v-for="(skill, index) in skills"
         :key="index"

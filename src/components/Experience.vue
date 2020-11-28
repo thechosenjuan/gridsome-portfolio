@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-200 px-96 py-16">
+  <div class="bg-gray-200 px-80 py-16">
     <div v-for="(event, index) in timelineItems" :key="index" class="relative">
       <p class="font-bold absolute -left-36">
         {{ event.dateRange.from.month }} - {{ event.dateRange.from.year }}

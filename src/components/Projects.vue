@@ -1,29 +1,25 @@
 <template>
   <section class="text-gray-700 mt-8">
     <h2 class="text-center text-5xl font-bold">My Projects</h2>
-    <div class="container px-5 py-12 mx-auto">
-      <div class="flex flex-wrap -m-4">
-        <div class="p-4 md:w-1/3">
-          <div
-            class="h-full border-2 border-gray-200 rounded-lg overflow-hidden"
-          >
-            <g-image
-              src="~/assets/images/pokedex_thumb.png"
-              class="cursor-pointer"
+    <div class="flex flex-wrap -m-4">
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
+          <g-image
+            src="~/assets/images/pokedex_thumb.png"
+            class="cursor-pointer"
+            @click="openPokedexProject"
+          />
+          <div class="p-6">
+            <h1
+              class="title-font text-lg font-medium text-gray-900 mb-3 cursor-pointer"
               @click="openPokedexProject"
-            />
-            <div class="p-6">
-              <h1
-                class="title-font text-lg font-medium text-gray-900 mb-3 cursor-pointer"
-                @click="openPokedexProject"
-              >
-                {{ projects[0].title }}
-              </h1>
-              <p
-                class="leading-relaxed mb-3"
-                v-html="projects[0].description"
-              ></p>
-            </div>
+            >
+              {{ projects[0].title }}
+            </h1>
+            <p
+              class="leading-relaxed mb-3"
+              v-html="projects[0].description"
+            ></p>
           </div>
         </div>
       </div>
