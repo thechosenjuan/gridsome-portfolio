@@ -1,5 +1,5 @@
 <template>
-  <section class="text-gray-700">
+  <section class="text-gray-700 mt-8 mb-8">
     <h2 class="text-center text-5xl font-bold">Key Skills</h2>
     <div class="flex flex-wrap">
       <div

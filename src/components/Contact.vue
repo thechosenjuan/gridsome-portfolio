@@ -1,5 +1,6 @@
 <template>
-  <section class="bg-purple-500">
+  <section class="bg-purple-500 break-container p-8 text-white">
+    <h2 class="text-center text-5xl font-bold">Contact Me</h2>
     <form
       name="contact"
       method="POST"
@@ -13,36 +14,41 @@
         <label> Don’t fill this out: <input name="bot-field" /> </label>
       </p>
       <div class="sender-info">
-        <div>
-          <label for="name" class="label text-white">Your name</label>
+        <div class="m-4">
+          <label for="name" class="label text-white mr-2">Your name</label>
           <input
             type="text"
             name="name"
-            class="bg-purple-500 border-2 border-white border-solid"
+            class="border-2 border-white border-solid"
             v-model="formData.name"
           />
         </div>
         <div>
-          <label for="email" class="text-white">Your email</label>
+          <label for="email" class="text-white mr-2">Your email</label>
           <input
             type="email"
             name="email"
-            class="bg-purple-500 border-2 border-white border-solid"
+            class="border-2 border-white border-solid"
             v-model="formData.email"
           />
         </div>
       </div>
 
-      <div class="message-wrapper">
-        <label for="message" class="text-white">Message</label>
+      <div class="message-wrapper m-4">
+        <label for="message" class="text-white mr-2">Message</label>
         <textarea
           name="message"
-          class="bg-purple-500 border-2 border-white border-solid"
+          class=" border-2 border-white border-solid"
           v-model="formData.message"
         ></textarea>
       </div>
 
-      <button type="submit">Submit form</button>
+      <button
+        type="submit"
+        class="text-white border border-white py-3 px-6 rounded-full hover:text-purple-500 hover:border-purple-500 hover:bg-white"
+      >
+        Submit
+      </button>
     </form>
   </section>
 </template>

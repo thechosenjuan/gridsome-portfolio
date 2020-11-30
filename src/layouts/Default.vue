@@ -1,5 +1,5 @@
 <template>
-  <div class="layout px-5 py-12 mx-auto container">
+  <div class="layout px-5 mx-auto container">
     <header class="header">
       <strong>
         <g-link to="/">{{ $static.metadata.siteName }}</g-link>
@@ -9,7 +9,7 @@
       </nav>
     </header>
     <slot />
-    <footer class="bg-gray-200">
+    <footer class="bg-gray-200 break-container px-16 py-10 h-full">
       <p class="inline-block">2020 ©</p>
       <div class="float-right -m-2">
         <g-image
@@ -54,6 +54,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 .layout {

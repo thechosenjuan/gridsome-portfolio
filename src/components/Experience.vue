@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-200 px-80 py-16 break-padding">
+  <div class="bg-gray-200 px-80 py-16 break-container">
     <div v-for="(event, index) in timelineItems" :key="index" class="relative">
       <p class="font-bold absolute -left-36">
         {{ event.dateRange.from.month }} - {{ event.dateRange.from.year }}
@@ -82,8 +82,3 @@ export default {
 };
 </script>
 
-<style>
-.break-padding::before {
-  content: "";
-}
-</style>
