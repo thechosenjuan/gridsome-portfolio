@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-purple-500 break-container p-8 text-white">
-    <h2 class="text-center text-5xl font-bold">Contact Me</h2>
+  <section class="bg-purple-500 break-container p-8">
+    <h2 class="text-center text-5xl font-bold text-white">Contact Me</h2>
     <form
       name="contact"
       method="POST"
@@ -70,16 +70,22 @@ export default {
         .join("&");
     },
     handleSubmit(e) {
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: this.encode({
-          "form-name": e.target.getAttribute("name"),
-          ...this.formData,
-        }),
-      })
-        .then(() => this.$router.push("/success"))
-        .catch((error) => alert(error));
+      if (
+        this.formData.name.length > 0 &&
+        this.formData.email.length > 0 &&
+        this.formData.message.length > 0
+      ) {
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: this.encode({
+            "form-name": e.target.getAttribute("name"),
+            ...this.formData,
+          }),
+        })
+          .then(() => this.$router.push("/success"))
+          .catch((error) => alert(error));
+      }
     },
   },
 };
