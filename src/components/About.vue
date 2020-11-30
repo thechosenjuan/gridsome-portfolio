@@ -6,7 +6,7 @@
     <div class="w-2/3 sm:ml-4 mt-4 sm:mt-0">
       <p class="mb-4 text-justify">
         Hi there, my name is Juan and I'm a Software Engineer currently focused
-        on Front End Web Development. I'm very curious person and I strive to
+        on Front End Web Development. I'm a very curious person and I strive to
         learn something new everyday.
       </p>
       <p class="text-justify">

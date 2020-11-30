@@ -19,7 +19,7 @@
           <input
             type="text"
             name="name"
-            class="border-2 border-white border-solid"
+            class="border-2 border-white border-solid w-64"
             v-model="formData.name"
           />
         </div>
@@ -28,7 +28,7 @@
           <input
             type="email"
             name="email"
-            class="border-2 border-white border-solid"
+            class="border-2 border-white border-solid w-64"
             v-model="formData.email"
           />
         </div>
@@ -38,7 +38,7 @@
         <label for="message" class="text-white mr-2">Message</label>
         <textarea
           name="message"
-          class=" border-2 border-white border-solid custom-media-query"
+          class=" border-2 border-white border-solid w-64 sm:ml-3"
           v-model="formData.message"
         ></textarea>
       </div>
@@ -90,11 +90,3 @@ export default {
   },
 };
 </script>
-
-<style>
-@media screen and (min-width: 375px) and (max-width: 385px) {
-  .custom-media-query {
-    display: block;
-  }
-}
-</style>

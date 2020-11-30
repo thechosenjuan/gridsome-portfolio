@@ -28,20 +28,21 @@ export default {
         {
           dateRange: {
             from: {
-              month: "Jan.",
-              year: "2017",
+              month: "Sep.",
+              year: "2019",
             },
             to: {
-              month: "Jul.",
-              year: "2017",
-              current: false,
+              month: "",
+              year: "",
+              current: true,
             },
           },
-          title: "Web Dev. Intern",
+          title: "Enterprise Web Developer",
           company: "Base22",
-          location: "Monterrey, MX",
+          location: "Columbus, OH",
           description:
-            "During my time as an intern, I was tasked with translating company proprietary JS components to Vue.JS.",
+            "My main focus is to develop and maintain intranets for the State of Ohio and its diverse agencies. I mostly work with Vue.JS and Tailwind CSS. Amongst the sites I've built, I developed the main site that the State of Ohio is using as central information hub during the coronavirus pandemic",
+          showcase: "https://coronavirus.ohio.gov",
         },
         {
           dateRange: {
@@ -59,26 +60,25 @@ export default {
           company: "Base22",
           location: "Monterrey, MX",
           description:
-            "As a Front End Developer, I was tasked with developing and maintaing intranets for different clients like CEMEX, UPS and the State of Ohio. I also gained experience as instructor by facilitating and providing a curse on Web Components with Stencil.",
+            "As a Front End Developer, I was tasked with developing and maintaing intranets for different clients like CEMEX, UPS and the State of Ohio. I also gained experience as instructor by facilitating and providing a course on Web Components with Stencil.",
         },
         {
           dateRange: {
             from: {
-              month: "Sep.",
-              year: "2019",
+              month: "Jan.",
+              year: "2017",
             },
             to: {
-              month: "",
-              year: "",
-              current: true,
+              month: "Jul.",
+              year: "2017",
+              current: false,
             },
           },
-          title: "Enterprise Web Developer",
+          title: "Web Dev. Intern",
           company: "Base22",
-          location: "Columbus, OH",
+          location: "Monterrey, MX",
           description:
-            "My main focus is to develop and maintain intranets for the State of Ohio and its diverse agencies. I mostly work with Vue.JS and Tailwind CSS. Amongst the sites I've built, I developed tha main site that the State of Ohio is using as central information hub during the coronavirus pandemic",
-          showcase: "https://coronavirus.ohio.gov",
+            "During my time as an intern, I was tasked with translating company proprietary JS components to Vue.JS.",
         },
       ],
     };
