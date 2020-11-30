@@ -35,7 +35,7 @@
       </div>
 
       <div class="message-wrapper m-4">
-        <label for="message" class="text-white mr-2">Message</label>
+        <label for="message" class="text-white mr-2 block sm:inline-block">Message</label>
         <textarea
           name="message"
           class=" border-2 border-white border-solid"
