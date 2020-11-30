@@ -35,10 +35,10 @@
       </div>
 
       <div class="message-wrapper m-4">
-        <label for="message" class="text-white mr-2 block sm:inline-block">Message</label>
+        <label for="message" class="text-white mr-2">Message</label>
         <textarea
           name="message"
-          class=" border-2 border-white border-solid"
+          class=" border-2 border-white border-solid custom-media-query"
           v-model="formData.message"
         ></textarea>
       </div>
@@ -91,4 +91,10 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+@media screen and (min-width: 375px) and (max-width: 385px) {
+  .custom-media-query {
+    display: block;
+  }
+}
+</style>
