@@ -8,7 +8,6 @@
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       class="text-center"
-      @submit.prevent
     >
       <input type="hidden" name="form-name" value="contact" />
       <p hidden>
@@ -47,7 +46,6 @@
       <button
         type="submit"
         class="text-white border border-white py-3 px-6 rounded-full hover:text-purple-500 hover:border-purple-500 hover:bg-white"
-        @click="handleSubmit($event)"
       >
         Submit
       </button>
