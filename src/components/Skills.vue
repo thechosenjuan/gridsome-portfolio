@@ -5,7 +5,7 @@
       <div
         v-for="(skill, index) in skills"
         :key="index"
-        class="rounded-full py-3 px-6 bg-purple-500 text-white w-auto text-center h-12 m-3.5"
+        class="rounded-full py-3 px-6 bg-purple-500 text-white w-auto text-center h-12 m-4"
       >
         {{ skill }}
       </div>
