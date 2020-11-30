@@ -1,7 +1,11 @@
 <template>
-  <div class="bg-gray-200 px-80 py-16 break-container">
-    <div v-for="(event, index) in timelineItems" :key="index" class="relative">
-      <p class="font-bold absolute -left-36">
+  <div class="bg-gray-200 py-16 break-container md:px-40 sm:px-4 px-4 lg:px-80">
+    <div
+      v-for="(event, index) in timelineItems"
+      :key="index"
+      class="relative m-4"
+    >
+      <p class="font-bold absolute sm:-left-36 sm:right-0 right-10">
         {{ event.dateRange.from.month }} - {{ event.dateRange.from.year }}
       </p>
       <p>{{ event.location }}</p>
@@ -81,4 +85,3 @@ export default {
   },
 };
 </script>
-

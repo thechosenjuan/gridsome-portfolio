@@ -16,7 +16,7 @@ import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 export default {
   metaInfo: {
-    title: "Hello, world!",
+    title: "Juan Flores",
   },
   components: {
     About,

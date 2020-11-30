@@ -23,7 +23,7 @@
             v-model="formData.name"
           />
         </div>
-        <div>
+        <div class="m-4">
           <label for="email" class="text-white mr-2">Your email</label>
           <input
             type="email"

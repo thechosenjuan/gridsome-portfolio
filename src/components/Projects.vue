@@ -2,7 +2,7 @@
   <section class="text-gray-700 mt-8">
     <h2 class="text-center text-5xl font-bold">My Projects</h2>
     <div class="flex flex-wrap -m-4">
-      <div class="p-4 md:w-1/3">
+      <div class="p-4 md:w-1/2 lg:w-1/3">
         <div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
           <g-image
             src="~/assets/images/pokedex_thumb.png"
