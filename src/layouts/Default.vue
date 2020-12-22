@@ -11,17 +11,13 @@
     <slot />
     <footer class="bg-gray-200 break-container px-16 py-10 h-full">
       <p class="inline-block">2020 ©</p>
-      <div class="float-right -m-2">
-        <g-image
-          src="~/assets/images/github-logo.png"
-          class="logo--github inline-block cursor-pointer"
-          @click="handleGithubClick"
-        />
-        <g-image
-          src="~/assets/images/linkedin-logo.png"
-          class="logo--linkedin inline-block cursor-pointer"
-          @click="handleLinkedInClick"
-        />
+      <div class="float-right -m-2 flex">
+        <div class="mr-4 cursor-pointer" @click="handleGithubClick">
+          <GithubIcon />
+        </div>
+        <div class="cursor-pointer" @click="handleLinkedInClick">
+          <LinkedinIcon />
+        </div>
       </div>
     </footer>
   </div>
@@ -34,8 +30,8 @@ query {
   }
 }
 </static-query>
-
 <script>
+import { GithubIcon, LinkedinIcon } from "vue-feather-icons";
 export default {
   methods: {
     handleGithubClick: function() {
@@ -44,6 +40,10 @@ export default {
     handleLinkedInClick: function() {
       window.open("https://www.linkedin.com/in/juanfloresbarr/", "_blank");
     },
+  },
+  components: {
+    GithubIcon,
+    LinkedinIcon,
   },
 };
 </script>
