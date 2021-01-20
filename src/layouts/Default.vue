@@ -15,8 +15,11 @@
         <div class="mr-4 cursor-pointer" @click="handleGithubClick">
           <GithubIcon />
         </div>
-        <div class="cursor-pointer" @click="handleLinkedInClick">
+        <div class="mr-4 cursor-pointer" @click="handleLinkedInClick">
           <LinkedinIcon />
+        </div>
+        <div class="cursor-pointer" @click="handleTwitchClick">
+          <TwitchIcon />
         </div>
       </div>
     </footer>
@@ -31,7 +34,7 @@ query {
 }
 </static-query>
 <script>
-import { GithubIcon, LinkedinIcon } from "vue-feather-icons";
+import { GithubIcon, LinkedinIcon, TwitchIcon } from "vue-feather-icons";
 export default {
   methods: {
     handleGithubClick: function() {
@@ -40,10 +43,14 @@ export default {
     handleLinkedInClick: function() {
       window.open("https://www.linkedin.com/in/juanfloresbarr/", "_blank");
     },
+    handleTwitchClick: function() {
+      window.open("https://twitch.tv/th3chosenjuan", "_blank");
+    },
   },
   components: {
     GithubIcon,
     LinkedinIcon,
+    TwitchIcon,
   },
 };
 </script>
